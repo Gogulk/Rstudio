@@ -1,0 +1,4 @@
+---
+     ### Install R
+     - name: install R
+       yum: name=R state=installed

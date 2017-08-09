@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  become: yes
+
+  tasks:
+    - name: Install R
+      include: tasks/install-r.yml
+    - name: Install shiny packages
+      include: tasks/install-shiny-packages.yml
+    - name: Install shiny server
+      include: tasks/install-shiny-server.yml

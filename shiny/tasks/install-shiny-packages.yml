@@ -1,0 +1,5 @@
+---
+  ### Install Shiny Packages   
+  - name: Installing Shiny Packages
+    shell: R -e "install.packages('shiny', repos='https://cran.rstudio.com/')"
+    become: true
