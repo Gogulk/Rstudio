@@ -1,0 +1,14 @@
+---
+   - name: Download Dependencies
+     get_url: url=http://mirror.centos.org/centos/7/os/x86_64/Packages/{{item}} dest=/tmp/
+     with_items:
+     - texlive-epsf-doc-svn21461.2.7.4-38.el7.noarch.rpm
+     - texlive-epsf-svn21461.2.7.4-38.el7.noarch.rpm
+     - texinfo-tex-5.1-4.el7.x86_64.rpm
+
+   - name: Install Dependencies
+     yum: name=/tmp/{{item}}
+     with_items:
+     - texlive-epsf-doc-svn21461.2.7.4-38.el7.noarch.rpm
+     - texlive-epsf-svn21461.2.7.4-38.el7.noarch.rpm
+     - texinfo-tex-5.1-4.el7.x86_64.rpm
