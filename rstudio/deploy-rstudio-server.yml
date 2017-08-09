@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: Install R
+      include: tasks/install-r.yml
+    - name: Install RStudio server
+      include: tasks/install-rstudio-server.yml

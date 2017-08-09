@@ -1,0 +1,6 @@
+---
+   - name: Get the archive of RStudio Server
+     get_url: url=https://download2.rstudio.org/rstudio-server-rhel-1.0.153-x86_64.rpm dest=/tmp/
+
+   - name: Install RStudio Server
+     yum: name=/tmp/rstudio-server-rhel-1.0.153-x86_64.rpm
