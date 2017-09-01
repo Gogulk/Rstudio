@@ -1,0 +1,4 @@
+- name: Install yum packages using a list
+  yum:
+    name: 
+      - git
