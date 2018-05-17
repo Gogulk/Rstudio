@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: Install Terraform
+      include: tasks/install-terraform.yml
